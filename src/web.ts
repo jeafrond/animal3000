@@ -9,4 +9,14 @@ export class AnimalPushNotificationWeb
     console.log('ECHO', options);
     return options;
   }
+  async showNotification(options: {
+    urlImg: string;
+    Color: string;
+    Text: string;
+  }): Promise<{ value: string }> {
+    console.log('ECHO', options);
+    return {
+      value: 'true'
+    };
+  }
 }
